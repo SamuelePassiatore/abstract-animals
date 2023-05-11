@@ -15,5 +15,12 @@ public class Regno {
 			Animale animale = animali[i];
 			System.out.println(animale);
 		}
+		
+		AnimaleManager animaleManager = new AnimaleManager();
+
+		System.out.println("Cane: " + animaleManager.faiNuotare(cane));
+		System.out.println("Passerotto: " + animaleManager.faiVolare(passerotto));
+		System.out.println("Aquila: " + animaleManager.faiVolare(aquila));
+		System.out.println("Delfino: " + animaleManager.faiNuotare(delfino));
 	}
 }
