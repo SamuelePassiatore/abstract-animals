@@ -1,6 +1,6 @@
 package org.lessons.java.animal.abs;
 
-public class Aquila extends Animale {
+public class Aquila extends Animale implements IVolante {
 
 	@Override
 	public String verso() {
@@ -10,6 +10,11 @@ public class Aquila extends Animale {
 	@Override
 	public String mangia() {
 		return "Carne";
+	}
+	
+	@Override
+	public String vola() {
+		return "Sto volando!!!";
 	}
 	
 	public String toString() {

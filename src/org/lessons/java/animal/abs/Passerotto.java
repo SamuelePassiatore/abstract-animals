@@ -1,6 +1,6 @@
 package org.lessons.java.animal.abs;
 
-public class Passerotto extends Animale{
+public class Passerotto extends Animale implements IVolante{
 
 	@Override
 	public String verso() {
@@ -10,6 +10,11 @@ public class Passerotto extends Animale{
 	@Override
 	public String mangia() {
 		return "Erba";
+	}
+	
+	@Override
+	public String vola() {
+		return "Sto volando!!!";
 	}
 
 	public String toString() {

@@ -1,6 +1,6 @@
 package org.lessons.java.animal.abs;
 
-public class Delfino extends Animale {
+public class Delfino extends Animale implements INuotante {
 
 	@Override
 	public String verso() {
@@ -10,6 +10,11 @@ public class Delfino extends Animale {
 	@Override
 	public String mangia() {
 		return "Pesce";
+	}
+	
+	@Override
+	public String nuota() {
+		return "Sto nuotando!!!";
 	}
 	
 	public String toString() {
